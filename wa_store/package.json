@@ -1,0 +1,56 @@
+{
+  "name": "wa_store",
+  "version": "1.0.0",
+  "description": "is a demo",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^4.3.1",
+    "koa-jsonp": "^2.0.2",
+    "mysql2": "^1.6.5",
+    "mz-modules": "^2.1.0",
+    "sequelize-cli": "^5.4.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-wa_store",
+    "stop": "egg-scripts stop --title=egg-server-wa_store",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "wangao",
+  "license": "MIT",
+  "main": ".autod.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
+}

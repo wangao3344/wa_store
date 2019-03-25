@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "wangao",
+    "password": "wa5069369",
+    "database": "test_net_store",
+    "host": "39.96.187.209",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "wangao",
+    "password": "wa5069369",
+    "database": "test_net_store",
+    "host": "39.96.187.209",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "wangao",
+    "password": "wa5069369",
+    "database": "net_store",
+    "host": "39.96.187.209",
+    "dialect": "mysql"
+  }
+}
