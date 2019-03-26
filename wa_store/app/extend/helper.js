@@ -4,6 +4,10 @@ let { isNumber, isObject, isStringType } = require('./utils/data_type');
 let encryptUtil = require('./utils/encryptUtil');
 // 用户信息数据校验
 let verifyInfor = require('./utils/verify_infor');
+//生成验证码
+let random=require('./utils/random');
+//安全工具类
+let security = require('./utils/security');
 // 响应格式的定义
 let responseTemplate = require('./enums/response_template');
 //第三放插件
@@ -19,5 +23,7 @@ module.exports = {
   verifyInfor,
   responseTemplate,
   getId,
+  random,
   encryptUtil,
+  security
 };

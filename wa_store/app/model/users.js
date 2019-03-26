@@ -62,6 +62,7 @@ module.exports = app => {
         // 如何你想在users表中查询role表中的信息，他就是belongsTo
         app.model.Users.belongsTo(app.model.Roles, {as: 'roles', foreignKey: 'role_id'});
     };
+
     Users.findByIdWithRoles = async function (id, role_id) {
         return await this.findOne({
             where: {id, role_id: role_id},

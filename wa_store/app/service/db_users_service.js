@@ -24,6 +24,7 @@ class DbUsersService extends Service {
      */
     async showUsersByPage(page, limit) {
         const options = {
+            //关联查询时就已经显示roles数据了
             include: {model: this.ctx.model.Roles, as: 'roles'},
             offset: (page - 1) * limit,
             limit: limit,
@@ -50,11 +51,7 @@ class DbUsersService extends Service {
         return usersList;
     }
 
-    /**
-     * create a new jy_cny_bill_deposit
-     * @param {Object} entity  model jy_cny_bill_deposit
-     * @return {Object} entity a model Entity
-     */
+
     async create(entity) {
         const flag = this.ctx.helper.isObject(entity);
         if (flag) {
